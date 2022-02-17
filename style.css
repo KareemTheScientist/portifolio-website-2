@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    background: lightgrey;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 30vw 70vw;
+    grid-template-areas: 
+    "hd hd"
+    "sd mn"
+    "ft ft"
+    ;
+}
+
+#hd {
+    background-color: rgb(10, 2, 19);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: hd;
+}
+
+#mn {
+    background-color: rgb(0, 253, 97);
+    width: 70vw;
+    height: 80vh;
+    /* display: grid;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns: 20vw 30vw 1fr;
+    grid-template-areas: 
+ "item01 item02 item03"
+ "item04 item05 item06"; */
+ grid-area: mn;
+}
+
+#sd {
+    background-color: rgb(8, 2, 2);
+    height: 80vh;
+    width: 30vw;
+    grid-area: sd;
+}
+
+#ft {
+    background-color: rgb(71, 70, 70);
+    height: 20vh;
+    width: 100vw;
+    grid-area: ft;
+    
+    
+    
+}
+
+#logo {
+    
+    height: 11vh;
+    width: 15vw;
+    background-color: rgb(24, 5, 5);
+   
+    
+}
+
+#navbar {
+    border: 1px solid rgb(233, 227, 227);
+
+    width: 50vw;
+    background-color: rgb(241, 241, 239);
+}
+
+.box {
+    border: 1px solid #000;
+    /* height: 40vh;
+    width: calc(100vh/3); */
+}
+
+
+#item01 {
+    grid-area: item01;
+}
+
+#item02 {
+    grid-area: item02;
+}
+
+#item03 {
+    grid-area: item03;
+}
+
+#item04 {
+    grid-area: item04;
+}
+
+#item05 {
+    grid-area: item05;
+}
+
+#item06 {
+    grid-area: item06;
+}
+
+/*_______________________small devices____________________*/
+@media screen and (max-width: 375px) {
+    #container {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 20vh 40vh 30vh 10vh;
+        grid-template-columns: 100vw;
+        grid-template-areas: 
+        "hd"
+        "mn"
+        "sd"
+        "ft"
+        ;
+
+    }
+
+    #hd {
+        background-color: rgb(17, 2, 2);
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: hd;
+    }
+    
+    #mn {
+        background-color: cadetblue;
+        width: 100vw;
+        height: 40vh;
+        grid-area: mn;
+    }
+    
+    #sd {
+        background-color: cornflowerblue;
+        height: 30vh;
+        width: 100vw;
+        grid-area: sd;
+    }
+    
+    #ft {
+        background-color: dimgrey;
+        height: 10vh;
+        width: 100vw;
+        grid-area: ft;
+    }
+    
+}
+
